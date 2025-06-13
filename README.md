@@ -5,8 +5,7 @@ Usage Example:
 ```python3
 from pybk import AsmModule, Hashable, ReturnVal
 
-# define an example function
-example = lambda a, b: {
+example = lambda a, b: {               # define an example function
     c := a + b,                        # c = a + b.
     v := False if c < 10 else True,    # v = true if c is greater than or equal to 10.
     l := Hashable([                    # hashable is used to allow lists and other non-hashable types to be used.
